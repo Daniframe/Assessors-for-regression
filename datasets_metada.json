@@ -1,0 +1,44 @@
+{
+    "infrared" : {
+        "rename_columns" : {
+            "EthnicityAI_AN" : "Ethnicity_American Indican or Alaskan Native",
+            "EthnicityAs" : "Ethnicity_Asian",
+            "EthinicityBl_AA" : "Ethnicity_Black or African-American",
+            "EthnicityHs_Lat" : "Ethnicity_Hispanic/Latino",
+            "EthnicityMR" : "Ethnicity_Multiracial",
+            "EthnicityWh" : "Ethnicity_White",
+            "AgeBracket1" : "Age_18-20",
+            "AgeBracket2" : "Age_21-25",
+            "AgeBracket3" : "Age_26-30",
+            "AgeBracket4" : "Age_31-40",
+            "AgeBracket5" : "Age_41-50",
+            "AgeBracket6" : "Age_51-60",
+            "AgeBracket7" : "Age_>60"
+        }
+    },
+
+    "swCSC" : {
+        "rename_columns" : {
+            "AFP": "Adjusted function points",
+            "FEh": "First estimate (Hours)",
+            "PT_D": "Project type_D",
+            "PT_P": "Project type_P",
+            "PT_Unk": "Project type_Unk",
+            "FEM_A": "First estimate method_A",
+            "FEM_CAE": "First estimate method_CAE",
+            "FEM_C": "First estimate method_C",
+            "FEM_D": "First estimate method_D",
+            "FEM_EO": "First estimate method_EO",
+            "FEM_W": "First estimate method_W"
+        }        
+    },
+
+    "life_expectancy" : {
+        "rename_columns" : {
+            "under_five_deaths" : "under-five_deaths",
+            "HIV_AIDS" : "HIV/AIDS",
+            "thinness_AgeBracket1" : "thinness_5-9_years",
+            "thinness_AgeBracket2" : "thinness_1-19_years"
+        }
+    }
+}

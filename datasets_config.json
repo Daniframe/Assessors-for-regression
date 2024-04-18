@@ -1,0 +1,309 @@
+{
+    "parkinsons" : {
+        "target" : "totalUPDRS",
+        "remove_columns" : ["motorUPDRS"],
+        "remove_instances" : [],
+        "test_split" : 0.3,
+        "model_needs" : {
+            "XGBRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "LGBMRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "CatBoostRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "RandomForestRegressor" : ["max_depth", "n_estimators"],
+            "DecisionTreeRegressor" : ["max_depth"]
+        },
+        "hyperparameter_space" : {
+            "max_depth" : {
+                "values" : [3, 5, 7, 9, 11],
+                "placeholder_value" : 1
+            },
+            "learning_rate" : {
+                "values" : [0.01, 0.05, 0.1],
+                "placeholder_value" : -1
+            },
+            "n_estimators" : {
+                "values" : [100, 250, 500, 750, 1000],
+                "placeholder_value" : 1
+            }
+        }
+    },
+
+    "swCSC" : {
+        "target" : "Actual effort (Hours)",
+        "remove_columns" : ["Client code", "Actual duration (Days)"],
+        "remove_instances" : [101],
+        "test_split" : 0.3,
+        "model_needs" : {
+            "XGBRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "LGBMRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "CatBoostRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "RandomForestRegressor" : ["max_depth", "n_estimators"],
+            "DecisionTreeRegressor" : ["max_depth"]
+        },
+        "hyperparameter_space" : {
+            "max_depth" : {
+                "values" : [3, 5, 7, 9, 11],
+                "placeholder_value" : 1
+            },
+            "learning_rate" : {
+                "values" : [0.01, 0.05, 0.1],
+                "placeholder_value" : -1
+            },
+            "n_estimators" : {
+                "values" : [100, 250, 500, 750, 1000],
+                "placeholder_value" : 1
+            }
+        }
+    },
+
+    "california_housing" : {
+        "target" : "MedHouseVal",
+        "remove_columns" : [],
+        "remove_instances" : [],
+        "test_split" : 0.3,
+        "model_needs" : {
+            "XGBRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "LGBMRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "CatBoostRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "RandomForestRegressor" : ["max_depth", "n_estimators"],
+            "DecisionTreeRegressor" : ["max_depth"]
+        },
+        "hyperparameter_space" : {
+            "max_depth" : {
+                "values" : [3, 5, 7, 9, 11],
+                "placeholder_value" : 1
+            },
+            "learning_rate" : {
+                "values" : [0.01, 0.05, 0.1],
+                "placeholder_value" : -1
+            },
+            "n_estimators" : {
+                "values" : [100, 250, 500, 750, 1000],
+                "placeholder_value" : 1
+            }
+        }
+    },
+
+    "bng_echoMonths" : {
+        "target" : "target",
+        "remove_columns" : [],
+        "remove_instances" : [],
+        "test_split" : 0.3,
+        "model_needs" : {
+            "XGBRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "LGBMRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "CatBoostRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "RandomForestRegressor" : ["max_depth", "n_estimators"],
+            "DecisionTreeRegressor" : ["max_depth"]
+        },
+        "hyperparameter_space" : {
+            "max_depth" : {
+                "values" : [3, 5, 7, 9, 11],
+                "placeholder_value" : 1
+            },
+            "learning_rate" : {
+                "values" : [0.01, 0.05, 0.1],
+                "placeholder_value" : -1
+            },
+            "n_estimators" : {
+                "values" : [100, 250, 500, 750, 1000],
+                "placeholder_value" : 1
+            }
+        }
+    },
+
+    "infrared" : {
+        "target" : "aveOralM",
+        "remove_columns" : ["aveOralF"],
+        "remove_instances" : [2, 3, 5, 6, 129, 392, 489, 520, 752, 959],
+        "test_split" : 0.3,
+        "model_needs" : {
+            "XGBRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "LGBMRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "CatBoostRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "RandomForestRegressor" : ["max_depth", "n_estimators"],
+            "DecisionTreeRegressor" : ["max_depth"]
+        },
+        "hyperparameter_space" : {
+            "max_depth" : {
+                "values" : [3, 5, 7, 9, 11],
+                "placeholder_value" : 1
+            },
+            "learning_rate" : {
+                "values" : [0.01, 0.05, 0.1],
+                "placeholder_value" : -1
+            },
+            "n_estimators" : {
+                "values" : [100, 250, 500, 750, 1000],
+                "placeholder_value" : 1
+            }
+        }
+    },
+
+    "ltfsid" : {
+        "target" : "Number of Barriers",
+        "remove_columns" : [],
+        "remove_instances" : [],
+        "test_split" : 0.3,
+        "model_needs" : {
+            "XGBRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "LGBMRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "CatBoostRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "RandomForestRegressor" : ["max_depth", "n_estimators"],
+            "DecisionTreeRegressor" : ["max_depth"]
+        },
+        "hyperparameter_space" : {
+            "max_depth" : {
+                "values" : [3, 5, 7, 9, 11],
+                "placeholder_value" : 1
+            },
+            "learning_rate" : {
+                "values" : [0.01, 0.05, 0.1],
+                "placeholder_value" : -1
+            },
+            "n_estimators" : {
+                "values" : [100, 250, 500, 750, 1000],
+                "placeholder_value" : 1
+            }
+        }
+    },
+
+    "abalone" : {
+        "target" : "Rings",
+        "remove_columns" : [],
+        "remove_instances" : [],
+        "test_split" : 0.3,
+        "model_needs" : {
+            "XGBRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "LGBMRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "CatBoostRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "RandomForestRegressor" : ["max_depth", "n_estimators"],
+            "DecisionTreeRegressor" : ["max_depth"]
+        },
+        "hyperparameter_space" : {
+            "max_depth" : {
+                "values" : [3, 5, 7, 9, 11],
+                "placeholder_value" : 1
+            },
+            "learning_rate" : {
+                "values" : [0.01, 0.05, 0.1],
+                "placeholder_value" : -1
+            },
+            "n_estimators" : {
+                "values" : [100, 250, 500, 750, 1000],
+                "placeholder_value" : 1
+            }
+        }
+    },
+
+    "auction_verification" : {
+        "target" : "verification_time",
+        "remove_columns" : ["verification_result"],
+        "remove_instances" : [],
+        "test_split" : 0.3,
+        "model_needs" : {
+            "XGBRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "LGBMRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "CatBoostRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "RandomForestRegressor" : ["max_depth", "n_estimators"],
+            "DecisionTreeRegressor" : ["max_depth"]
+        },
+        "hyperparameter_space" : {
+            "max_depth" : {
+                "values" : [3, 5, 7, 9, 11],
+                "placeholder_value" : 1
+            },
+            "learning_rate" : {
+                "values" : [0.01, 0.05, 0.1],
+                "placeholder_value" : -1
+            },
+            "n_estimators" : {
+                "values" : [100, 250, 500, 750, 1000],
+                "placeholder_value" : 1
+            }
+        }
+    },
+
+    "music_popularity" : {
+        "target" : "popularity",
+        "remove_columns" : [],
+        "remove_instances" : [],
+        "test_split" : 0.3,
+        "model_needs" : {
+            "XGBRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "LGBMRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "CatBoostRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "RandomForestRegressor" : ["max_depth", "n_estimators"],
+            "DecisionTreeRegressor" : ["max_depth"]
+        },
+        "hyperparameter_space" : {
+            "max_depth" : {
+                "values" : [3, 5, 7, 9, 11],
+                "placeholder_value" : 1
+            },
+            "learning_rate" : {
+                "values" : [0.01, 0.05, 0.1],
+                "placeholder_value" : -1
+            },
+            "n_estimators" : {
+                "values" : [100, 250, 500, 750, 1000],
+                "placeholder_value" : 1
+            }
+        }
+    },
+
+    "life_expectancy" : {
+        "target" : "Life_expectancy",
+        "remove_columns" : [],
+        "remove_instances" : [],
+        "test_split" : 0.3,
+        "model_needs" : {
+            "XGBRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "LGBMRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "CatBoostRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "RandomForestRegressor" : ["max_depth", "n_estimators"],
+            "DecisionTreeRegressor" : ["max_depth"]
+        },
+        "hyperparameter_space" : {
+            "max_depth" : {
+                "values" : [3, 5, 7, 9, 11],
+                "placeholder_value" : 1
+            },
+            "learning_rate" : {
+                "values" : [0.01, 0.05, 0.1],
+                "placeholder_value" : -1
+            },
+            "n_estimators" : {
+                "values" : [100, 250, 500, 750, 1000],
+                "placeholder_value" : 1
+            }
+        }
+    },
+
+    "parkinsons_motor" : {
+        "target" : "motorUPDRS",
+        "remove_columns" : ["totalUPDRS"],
+        "remove_instances" : [],
+        "test_split" : 0.3,
+        "model_needs" : {
+            "XGBRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "LGBMRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "CatBoostRegressor" : ["max_depth", "n_estimators", "learning_rate"],
+            "RandomForestRegressor" : ["max_depth", "n_estimators"],
+            "DecisionTreeRegressor" : ["max_depth"]
+        },
+        "hyperparameter_space" : {
+            "max_depth" : {
+                "values" : [3, 5, 7, 9, 11],
+                "placeholder_value" : 1
+            },
+            "learning_rate" : {
+                "values" : [0.01, 0.05, 0.1],
+                "placeholder_value" : -1
+            },
+            "n_estimators" : {
+                "values" : [100, 250, 500, 750, 1000],
+                "placeholder_value" : 1
+            }
+        }
+    }
+}
