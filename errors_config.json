@@ -1,0 +1,8 @@
+{
+    "difference" : "signed",
+    "absolute" : "absolute",
+    "squared" : "squared",
+    "squared_signed" : "signed_squared",
+    "logistic" : "logistic",
+    "logistic_absolute" : "abs_logistic"
+}

@@ -1,0 +1,23 @@
+{
+    "difference-absolute" : "diff_to_abs",
+    "difference-squared" : "diff_to_sq",
+    "difference-squared_signed" : "diff_to_ssq",
+    "difference-logistic" : "diff_to_logit",
+    "difference-logistic_absolute" : "diff_to_logitabs",
+    "squared_signed-absolute" : "ssq_to_abs",
+    "squared_signed-squared" : "ssq_to_sq",
+    "squared_signed-difference" : "ssq_to_diff",
+    "squared_signed-logistic" : "ssq_to_logit",
+    "squared_signed-logistic_absolute" : "ssq_to_logitabs",
+    "logistic-logistic_absolute" : "logit_to_logitabs",
+    "logistic-difference" : "logit_to_diff",
+    "logistic-absolute" : "logit_to_abs",
+    "logistic-squared" : "logit_to_sq",
+    "logistic-squared_signed" : "logit_to_ssq",
+    "absolute-squared" : "abs_to_sq",
+    "absolute-logistic_absolute" : "abs_to_logitabs",
+    "squared-absolute" : "sq_to_abs",
+    "squared-logistic_absolute" : "sq_to_logitabs",
+    "logistic_absolute-absolute" : "logitabs_to_abs",
+    "logistic_absolute-squared" : "logitabs_to_sq"
+}
