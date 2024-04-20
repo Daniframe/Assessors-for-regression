@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
     DATASETS = [
         "abalone", "auction_verification", "bng_echoMonths", "california_housing",
-        "infrared", "life_expectancy", "ltfsid", "music_popularity", "parkinsons",
+        "infrared", "life_expectancy", "music_popularity", "parkinsons",
         "parkinsons_motor", "swCSC"]
     
     PAIRINGS = [
@@ -93,4 +93,4 @@ if __name__ == "__main__":
         print(f"Dataset {dataset} done!")
 
     results_df = pd.DataFrame(results)
-    results_df.to_csv("./Data/significance.csv", index = False)
+    results_df.to_csv("./Data/significance_results.csv", index = False)
