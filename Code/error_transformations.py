@@ -48,12 +48,12 @@ def logit_to_diff(x: np.array, *args, **kwargs) -> np.array:
     x[x >= 1] = 1 - 1e-5
     x[x <= -1] = -1 + 1e-5
 
-    return np.log((1-x)/(x+1)) * 1/kwargs["inv_tau"]
+    return -np.log((1-x)/(x+1)) * 1/kwargs["inv_tau"]
 
 def logit_to_abs(x: np.array, *args, **kwargs) -> np.array:
 
     x[x >= 1] = 1 - 1e-5
-    x[x <= -1] = 1 + 1e-5
+    x[x <= -1] = -1 + 1e-5
 
     return np.abs(np.log((1-x)/(x+1)) * 1/kwargs["inv_tau"])
 
