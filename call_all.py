@@ -12,10 +12,6 @@ dataset_names = [
     "parkinsons_motor",
     "swCSC"]
 
-# error_combs = [
-             
-# ]
-
 error_combs = [
     # ("difference", "absolute"),        
     # ("difference", "squared"),          
