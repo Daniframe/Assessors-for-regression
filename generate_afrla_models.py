@@ -47,7 +47,7 @@ for model_dscr in model_descriptions:
     max_depth = model_dscr["hyperparameters"]["max_depth"]
     lr = model_dscr["hyperparameters"].get("learning_rate", -1)
     n_estimator = model_dscr["hyperparameters"].get("estimators", 1)
-    labels.append(f"{model_name}-{max_depth}-{n_estimator}-{lr}")
+    labels.append(f"{model_name}_{max_depth}_{n_estimator}_{lr}")
 
 model_info = {
     "descriptions" : model_descriptions,
