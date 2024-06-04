@@ -33,7 +33,14 @@ me_df["max_depth"] = max_depths_list
 me_df["n_estimators"] = n_estimators_list
 me_df["learning_rate"] = lrs_list
 
-datasets = ["il_swCSC.csv", "il_parkinsons.csv", "il_infrared.csv"]
+datasets = [
+    "il_abalone.csv",
+    "il_auction_verification.csv",
+    "il_bng_echoMonths.csv",
+    "il_swCSC.csv", 
+    "il_parkinsons.csv", 
+    "il_infrared.csv"
+]
 
 # Load ILOriginalBaseResults
 for il_results_path in datasets:
@@ -43,6 +50,8 @@ for il_results_path in datasets:
 
     # No models lost
     assert il_results_me.shape[0] == il_results.shape[0]
+
+    # il_results_me = il_results_me.drop(columns = ["model", "max_depth", "n_estimators", "learning_rate"])
 
     il_results_me.to_csv(os.path.join(ROOT_DIR, "Data", "ILBaseResults", il_results_path), index = False)
 
